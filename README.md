@@ -13,5 +13,5 @@ Technologies Used : We have used HTML for overall layout of our wbsite , CSS for
                     to our website.
 
 Steps to Execute the project : We have provide you three files which are of HTML , CSS , and JAVASCRIPT with the help of which you are able to view our website.                    
-               
+Github Repository Link : https://github.com/Ayush-Ahlawat/Ayush_Ahlawat_Btech-CSE-A_Powerlytics.git               
             
