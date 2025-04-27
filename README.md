@@ -16,5 +16,6 @@ Steps to Execute the project : We have provide you files which are of HTML , CSS
                                SELECT folder of "Final Project files" after then you have to click on "SIGNUP.HTML" file , after then select option "OPEN WITH" select any of 
                                your browser like chrome , brave or microsoft edge , after then you will be directed to our website fill username and password and you will be on 
                                our website.                    
+
 Github Repository Link : https://github.com/Ayush-Ahlawat/Ayush_Ahlawat_Btech-CSE-A_Powerlytics.git               
             
