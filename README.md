@@ -12,6 +12,9 @@ Video Explanation Drive link : https://drive.google.com/file/d/1o4YfjnvFwWp6Luyx
 Technologies Used : We have used HTML for overall layout of our wbsite , CSS for styling and give colour contrast to our website , and JAVASCRIPT which add functionality 
                     to our website.
 
-Steps to Execute the project : We have provide you three files which are of HTML , CSS , and JAVASCRIPT with the help of which you are able to view our website.                    
+Steps to Execute the project : We have provide you files which are of HTML , CSS , and JAVASCRIPT with the help of which you are able to view our website. First you have to 
+                               SELECT folder of "Final Project files" after then you have to click on "SIGNUP.HTML" file , after then select option "OPEN WITH" select any of 
+                               your browser like chrome , brave or microsoft edge , after then you will be directed to our website fill username and password and you will be on 
+                               our website.                    
 Github Repository Link : https://github.com/Ayush-Ahlawat/Ayush_Ahlawat_Btech-CSE-A_Powerlytics.git               
             
