@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    margin: 20px;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .search-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #searchInput {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  thead {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    th {
+      background-color: #2980b9;
+    }
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      white-space: pre-wrap;
+    }
+    td::before {
+      position: absolute;
+      top: 12px;
+      left: 15px;
+      font-weight: bold;
+      color: #555;
+    }
+    td:nth-of-type(1)::before { content: "Appliance"; }
+    td:nth-of-type(2)::before { content: "Typical Power"; }
+    td:nth-of-type(3)::before { content: "Max Power"; }
+    td:nth-of-type(4)::before { content: "Standby Power"; }
+  }
+  tr {
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  tr:hover {
+    background-color: #e0f7fa;
+  }
+  

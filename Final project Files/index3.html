@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electrical Appliances Dashboard</title>
+  <link rel="stylesheet" href="style3.css" />
+  <script src="searchbar.js" defer></script> <!-- Linking the JS file -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.jpg" alt="Site Logo" class="site-icon" />
+      POWERLYTICS</div>
+    <input type="text" placeholder="Search Appliances" class="search-box" id="searchInput" oninput="filterAppliances()" />
+    <div class="nav-links">
+      <div id="signInTrigger" class="clickable">Hello, <span id="userName">Guest</span><br/><strong>Sign In</strong></div>
+      <div><br/><strong>India</strong></div>
+      <div class="cart"><span id="cartCount"></span></div>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </header>
+
+
+  <div class="hero-section">
+    <div class="hero-msg">
+      <img src="logo.jpg" alt="Hero Image" class="hero-image" />
+      <p>Welcome to the Appliances Dashboard!</p>
+    </div>
+  </div>
+
+  <div class="shop-section">
+    <div class="box1 box border" data-category="Air Conditioner">
+      <div class="box-content">
+        <h2>Air Conditioners</h2>
+        <div class="box-image" style="background-image: url('image_1.jpg');"></div>
+        <p><a href="energycalculator.html">calculate</a></p>
+      </div>
+    </div>
+    
+    <div class="box2 box border" data-category="Geyser">
+      <div class="box-content">
+        <h2>Geysers</h2>
+        <div class="box-image" style="background-image: url('geyser_1.webp');"></div>
+        <p><a href="energycalculator.html">calculate</a></p>
+      </div>
+    </div>
+
+    <div class="box3 box border" data-category="Room Heater">
+      <div class="box-content">
+        <h2>Room Heater</h2>
+        <div class="box-image" style="background-image: url('room_hater.jpeg');"></div>
+        <p><a href="energycalculator.html">calculate</a></p>
+      </div>
+    </div>
+
+    <div class="box4 box border" data-category="Iron">
+      <div class="box-content">
+        <h2>Iron</h2>
+        <div class="box-image" style="background-image: url('iron_1.jpeg');"></div>
+        <p><a href="energycalculator.html">calculate</a></p>
+      </div>
+    </div>
+
+    <div class="box1 box border" data-category="Fan">
+      <div class="box-content">
+        <h2>Fans</h2>
+        <div class="box-image" style="background-image: url('fan_1.jpeg');"></div>
+        <p><a href="energycalculator.html">calculate</a></p>
+      </div>
+    </div>
+
+    <div class="box2 box border" data-category="Light">
+      <div class="box-content">
+        <h2>Lights</h2>
+        <div class="box-image" style="background-image: url('lights_1.jpeg');"></div>
+        <p><a href="energycalculator.html">calculate</a></p>
+      </div>
+    </div>
+
+    <div class="box3 box border" data-category="Mixer">
+      <div class="box-content">
+        <h2>Mixers</h2>
+        <div class="box-image" style="background-image: url('mixer_1.jpeg');"></div>
+        <p><a href="energycalculator.html">calculate</a></p>
+      </div>
+    </div>
+
+    <div class="box4 box border" data-category="Vacuum Cleaner">
+      <div class="box-content">
+        <h2>Vacuum Cleaner</h2>
+        <div class="box-image" style="background-image: url('vacuum_1.jpg');"></div>
+        <p><a href="energycalculator.html">calculate</a></p>
+      </div>
+    </div>
+
+    <div class="box4 box border" data-category="Microwave">
+      <div class="box-content">
+        <h2>Microwaves</h2>
+        <div class="box-image" style="background-image: url('microwave_1.jpg');"></div>
+        <p><a href="energycalculator.html">calculate</a></p>
+      </div>
+    </div>
+
+    <div class="box4 box border" data-category="Refrigerator">
+      <div class="box-content">
+        <h2>Refrigerator</h2>
+        <div class="box-image" style="background-image: url('refrigerator_1.jpg');"></div>
+        <p><a href="energycalculator.html">calculate</a></p>
+      </div>
+    </div>
+
+    <div class="box4 box border" data-category="Washing Machine">
+      <div class="box-content">
+        <h2>Washing Machine</h2>
+        <div class="box-image" style="background-image: url('Washing\ Machine_1.jpg');"></div>
+        <p><a href="energycalculator.html">calculate</a></p>
+      </div>
+    </div>
+
+    <div class="box4 box border" data-category="Small Appliances">
+      <div class="box-content">
+        <h2>Other Small Appliances</h2>
+        <div class="box-image" style="background-image: url('small\ appliances_1.jpeg');"></div>
+        <p><a href="energycalculator.html">calculate</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="search-link-container">
+    <h2>Search Your Appliances</h2>
+    <a href="table.html" class="search-link">Go to Appliance Search</a>
+  </div>
+  
+
+  <footer>
+    <div class="foot-panel1">Back to Top</div>
+    <div class="foot-panel2">
+      <ul>
+        <p>Ayush Ahlawat</p>
+        <a>Btech CSE</a>
+        <a>beastalpha64@gmail.com</a>
+        <a>Kr Mangalam University</a>
+        <a>2301010001</a>
+      </ul>
+      <ul>
+        <p>Kashif Khan</p>
+        <a>Btech CSE</a>
+        <a>kashifkhan754308@gmail.com</a>
+        <a>Kr Mangalam University</a>
+        <a>2301010051</a>
+      </ul>
+      <ul>
+        <p>Rupesh Singh</p>
+        <a>Btech CSE</a>
+        <a>rupeshrws06@gmail.com</a>
+        <a>Kr Mangalam University</a>
+        <a>2301010057</a>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

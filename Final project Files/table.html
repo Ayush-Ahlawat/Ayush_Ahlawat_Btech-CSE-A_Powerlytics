@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Appliance Power Consumption List</title>
+  <link rel="stylesheet" href="tablestyle.css">
+</head>
+<body>
+
+<h1>Appliance Power Consumption</h1>
+
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search for an appliance...">
+</div>
+
+<table id="applianceTable">
+  <thead>
+    <tr onclick="redirectToCalculator()">  <!--y wala link calculator ko redirect krne k liye h or appliances add krna ho to same way s krna-->
+      <th>Appliance</th>
+      <th>Typical Power</th>
+      <th>Max Power</th>
+      <th>Standby Power</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr onclick="redirectToCalculator()">
+      <td>100W light bulb (Incandescent)</td>
+      <td>100W</td>
+      <td>100W</td>
+      <td>0W</td>
+    </tr>
+    <tr onclick="redirectToCalculator()">
+      <td>22 Inch LED TV</td>
+      <td>17W</td>
+      <td>17W</td>
+      <td>0.5W</td>
+    </tr>
+    <tr onclick="redirectToCalculator()">
+      <td>25" Colour TV</td>
+      <td>150W</td>
+      <td>150W</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>3" Belt Sander</td>
+      <td>1000W</td>
+      <td>1000W</td>
+      <td>N/A</td>
+    </tr>
+    <tr onclick="redirectToCalculator()">
+        <td>32 Inch LED TV</td>
+        <td>20W</td>
+        <td>60W</td>
+        <td>1W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Air Cooler</td>
+        <td>65W</td>
+        <td>80W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Air Fryer</td>
+        <td>1500W</td>
+        <td>1500W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Air Purifier</td>
+        <td>25W</td>
+        <td>30W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Amazon Echo</td>
+        <td>3W</td>
+        <td>3W</td>
+        <td>2W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>American-style Fridge Freezer</td>
+        <td>40W</td>
+        <td>80W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Apple TV</td>
+        <td>3W</td>
+        <td>6W</td>
+        <td>0.3W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Aquarium Pump</td>
+        <td>20W</td>
+        <td>50W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Bathroom Towel Heater</td>
+        <td>60W</td>
+        <td>150W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Ceiling Fan</td>
+        <td>60W</td>
+        <td>70W</td>
+        <td>0W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Chromebook</td>
+        <td>2W</td>
+        <td>2W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Clock Radio</td>
+        <td>1W</td>
+        <td>2W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Clothes Dryer</td>
+        <td>1000W</td>
+        <td>4000W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Coffee Maker</td>
+        <td>800W</td>
+        <td>1400W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Computer Monitor</td>
+        <td>25W</td>
+        <td>30W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Curling Iron</td>
+        <td>25W</td>
+        <td>35W</td>
+        <td>0W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Deep Freezer</td>
+        <td>19W</td>
+        <td>19W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Desk Lamp</td>
+        <td>40W</td>
+        <td>65W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Domestic water pump</td>
+        <td>200W</td>
+        <td>300W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>DVD player</td>
+        <td>26W</td>
+        <td>60W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Electric boiler</td>
+        <td>4000W</td>
+        <td>14000W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Electr heater</td>
+        <td>2000W</td>
+        <td>3000W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Electric pressure cooker</td>
+        <td>1000W</td>
+        <td>1000W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Electric Shaver</td>
+        <td>15W</td>
+        <td>20W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Electric Stove</td>
+        <td>2000W</td>
+        <td>2000W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>EV car charger</td>
+        <td>2000W</td>
+        <td>7000W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Extranctor fan</td>
+        <td>12W</td>
+        <td>12W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Fluorescent Lamp</td>
+        <td>28W</td>
+        <td>45W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Food blender</td>
+        <td>300W</td>
+        <td>400W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Freezer</td>
+        <td>30W</td>
+        <td>50W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Fridge</td>
+        <td>100W</td>
+        <td>220W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Fryer</td>
+        <td>1000W</td>
+        <td>1000W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Game Console</td>
+        <td>120W</td>
+        <td>200W</td>
+        <td>1W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Hair blow dryer</td>
+        <td>1800W</td>
+        <td>2500W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Heated Bathroom mirror</td>
+        <td>50W</td>
+        <td>100W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Internet Router</td>
+        <td>5W</td>
+        <td>15W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Humidifier</td>
+        <td>60W</td>
+        <td>240W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>iMAC</td>
+        <td>60W</td>
+        <td>240W</td>
+        <td>1W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Inkjet printer</td>
+        <td>20W</td>
+        <td>30W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Iron</td>
+        <td>1000W</td>
+        <td>1000W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Laser Printer</td>
+        <td>600W</td>
+        <td>800W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>LED light bulb</td>
+        <td>7W</td>
+        <td>10W</td>
+        <td>0W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>MI box</td>
+        <td>5W</td>
+        <td>7W</td>
+        <td>3W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Microwave</td>
+        <td>600W</td>
+        <td>1700W</td>
+        <td>3W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Oven</td>
+        <td>2150W</td>
+        <td>2150W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Pedestal Fan</td>
+        <td>50W</td>
+        <td>60W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>percolator</td>
+        <td>800W</td>
+        <td>1100W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Phone Charger</td>
+        <td>4W</td>
+        <td>7W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Power shower</td>
+        <td>7500W</td>
+        <td>10500W</td>
+        <td>0W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Projector</td>
+        <td>220W</td>
+        <td>270W</td>
+        <td>1W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Sandwich Maker</td>
+        <td>700W</td>
+        <td>1000W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>soldring iron</td>
+        <td>30W</td>
+        <td>60W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Table fan</td>
+        <td>10W</td>
+        <td>25W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Toaster</td>
+        <td>800W</td>
+        <td>1800W</td>
+        <td>0W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Treadmill</td>
+        <td>280W</td>
+        <td>900W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Tubelight</td>
+        <td>22W</td>
+        <td>22W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>TV</td>
+        <td>40W</td>
+        <td>100W</td>
+        <td>1W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Vacuum cleaner</td>
+        <td>450W</td>
+        <td>900W</td>
+        <td>0W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Washing Machine</td>
+        <td>500W</td>
+        <td>500W</td>
+        <td>1W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>water dispenser</td>
+        <td>100W</td>
+        <td>100W</td>
+        <td>N/A</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>WIfi router</td>
+        <td>4W</td>
+        <td>10W</td>
+        <td>4W</td>
+      </tr>
+      <tr onclick="redirectToCalculator()">
+        <td>Xbox One</td>
+        <td>50W</td>
+        <td>110W</td>
+        <td>14W</td>
+      </tr>
+    <!-- More appliances can be added here -->
+  </tbody>
+</table>
+
+<script src="tablesearch.js"></script>
+<script>
+    function redirectToCalculator() {
+      window.location.href = "energycalculator.html";
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appliance Energy Calculator</title>
+  <link rel="stylesheet" href="calculatorstyle.css" />
+  <script src="energyCalculator.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Appliance Energy Calculator</h1>
+  </header>
+
+  <main>
+    <form id="energyForm">
+      <label for="wattage">Appliance Wattage (W):</label>
+      <input type="number" id="wattage" required />
+
+      <label for="hours">Hours Used Per Day:</label>
+      <input type="number" id="hours" required />
+
+      <label for="rate">Electricity Rate (₹ per kWh):</label>
+      <input type="number" id="rate" required />
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <section id="results">
+      <h2>Results</h2>
+      <p id="dailyCost"></p>
+      <p id="monthlyCost"></p>
+      <p id="yearlyCost"></p>
+    </section>
+    <!--isske nicche s tips vala section  strong tag k under k content is the heading-->
+    <section id="energySavingTips">
+      <h2>How to Reduce Power Consumption</h2>
+      <ul>
+        <li><strong>Turn off appliances when not in use:</strong> Unplugging or turning off devices can prevent power wastage.</li>
+        <li><strong>Use energy-efficient appliances:</strong> Look for energy-saving models with higher efficiency ratings.</li>
+        <li><strong>Use timers or smart plugs:</strong> Set timers for appliances to run only when necessary, and use smart plugs to control them remotely.</li>
+        <li><strong>Switch to LED lights:</strong> LED lights use less energy and have a longer lifespan compared to traditional bulbs.</li>
+        <li><strong>Optimize appliance usage:</strong> Use appliances like air conditioners, refrigerators, and washing machines efficiently by avoiding overuse and setting appropriate temperatures.</li>
+        <li><strong>Maintain your appliances:</strong> Regular cleaning and maintenance of appliances, like air conditioners and refrigerators, can help them run more efficiently.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by POWERLYTICS</p>
+  </footer>
+
+  <dialog id="saveDialog">
+    <p>Do you want to save this record?</p>
+    <button id="saveButton">Save Record</button>
+    <button id="closeDialog">Cancel</button>
+  </dialog>
+
+</body>
+</html>

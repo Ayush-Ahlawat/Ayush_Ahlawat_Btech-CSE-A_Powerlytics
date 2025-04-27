@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="signupstyle.css" />
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Login</h2>
+    <form onsubmit="storeUserData(event)">
+      <label for="userid">User ID</label>
+      <input type="text" id="userid" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required />
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function storeUserData(event) {
+      event.preventDefault(); 
+
+      const userId = document.getElementById('userid').value;
+      const password = document.getElementById('password').value;
+
+      // Save user ID and password in localStorage
+      localStorage.setItem('userid', userId);
+      localStorage.setItem('password', password);
+
+      // Redirect to the main page
+      window.location.href = 'index3.html'; // change this to your actual page filename
+    }
+  </script>
+</body>
+</html>
